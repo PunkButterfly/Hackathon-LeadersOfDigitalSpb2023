@@ -40,3 +40,26 @@ print(parse_result(response))
 Интерфейс fast-api после этого можно открыть по ссылке http://0.0.0.0:8503/docs.
 
 Также можно развернуть локальный докер-образ, пример есть выше.
+
+# Структура проекта (Backend + Models)
+```
+├── app  
+│  ├── model_train_pipeline  
+│  │  ├── evaluate.py  
+│  │  ├── model.py  
+│  │  ├── train.py  
+│  ├── modules  
+│  │  ├── __init__.py  
+│  │  ├── make_dataset.ipynb  
+│  │  ├── models.py  
+│  │  ├── search.py  
+│  ├── __init__.py  
+│  ├── main.py  
+├── .dockerignore  
+├── .gitignore  
+├── Dockerfile  
+├── requirements.txt  
+├── README.md  
+```
+# Frontend
+- [Ссылка](https://alllocated.streamlit.app) на веб-сервис
