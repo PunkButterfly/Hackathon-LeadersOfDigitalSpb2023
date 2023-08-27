@@ -30,6 +30,8 @@ response = requests.post(url, data=json.dumps(payload)).json()
 
 print(parse_result(response))
 ```
+Также реализован **функционал переобучения модели**. Для этого нужно запустить команду ```./app/model_train_pipeline/train.py --data_path /app/additional_data/train_df.csv```. Аргумент --data_path нужен для указания пути к обучающей выборки.
+
 ## Навигация
 ## Как запустить проект?
 В проекте исопльзуется Python версии 3.8.9.
