@@ -45,17 +45,17 @@ print(parse_result(response))
 # Структура проекта (Backend + Models)
 ```
 ├── app  
-│  ├── model_train_pipeline  
+│  ├── model_train_pipeline # директория для переобучения модели на указанном датасете
 │  │  ├── evaluate.py  
 │  │  ├── model.py  
 │  │  ├── train.py  
-│  ├── modules  
+│  ├── modules  # вспомогательные модули
 │  │  ├── __init__.py  
-│  │  ├── make_dataset.ipynb  
-│  │  ├── models.py  
-│  │  ├── search.py  
+│  │  ├── make_dataset.ipynb  # ноутбук для составления датасета
+│  │  ├── models.py # архитектура модели ранжирования
+│  │  ├── search.py  # функционал поиска по базе
 │  ├── __init__.py  
-│  ├── main.py  
+│  ├── main.py # запускаемый сервером файл
 ├── .dockerignore  
 ├── .gitignore  
 ├── Dockerfile  
