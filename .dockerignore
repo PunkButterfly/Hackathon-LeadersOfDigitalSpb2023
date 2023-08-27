@@ -1,0 +1,7 @@
+.git
+.gitignore
+.cache
+.conda
+.venv
+app/model_train_pipeline
+__pycache__/
