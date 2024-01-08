@@ -1,4 +1,4 @@
-# Hackathon-DigitalBreakthroughSaintP
+# Hackathon-LeadersOfDigitalSaintP
 ## Сервис
 
 Решение разработано в виде веб-приложения на streamlit, хостится на облачной платформе Yandex.Cloud. Ознакомиться можно по ссылке https://alllocated.streamlit.app.
