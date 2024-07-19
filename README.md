@@ -4,9 +4,9 @@
 Решение разработано в виде веб-приложения на streamlit, хостится на облачной платформе Yandex.Cloud. Ознакомиться можно по ссылке https://alllocated.streamlit.app.
 
 API реализовано с технологией контейнеризации, поэтому при желании можно развернуть решения на своих вычислительных ресурсах, например с помощью команд ниже.
-```
-docker pull kuprik01/dh_linux_prod
-docker run -p 80:80 kuprik01/dh_linux_prod
+```bash
+docker pull punkbutterfly/hackathon-leadersofdigitalspb (kuprik01/dh_linux_prod)
+docker run -p 8503:8503 -d punkbutterfly/hackathon-leadersofdigitalspb
 ```
 Помимо веб-версии, также можно напрямую обращаться к API, например: 
 ```python3
