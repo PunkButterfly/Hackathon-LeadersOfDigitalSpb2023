@@ -1,17 +1,11 @@
 FROM python:3.8.9
 
-# 
-WORKDIR /code
+WORKDIR container/
 
-# 
-COPY ./requirements.txt /code/requirements.txt
+COPY . .
 
-# 
+#COPY ./requirements.txt /code/requirements.txt
 
-RUN pip install -r /code/requirements.txt
+RUN pip install -r requirements.txt
 
-# 
-COPY ./app /code/app
-
-# 
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8503"]
+CMD python app/main.py

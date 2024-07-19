@@ -1,7 +1,9 @@
+import uvicorn
 from fastapi import FastAPI
-from .modules.search import *
-from .modules.models import *
+from modules.search import *
+from modules.models import *
 from tqdm import tqdm
+import os
 from transliterate import translit, get_available_language_codes
 
 DATASET_PATH = 'app/additional_data/building_20230808.csv'
@@ -56,3 +58,6 @@ async def query(query: Query = None):
         "result": response_list
     }
     return response
+
+if __name__ == '__main__':
+    uvicorn.run(app, host="0.0.0.0", port=os.getenv('BACKEND_PORT'))

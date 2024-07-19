@@ -1,0 +1,15 @@
+services:
+  backend:
+    environment:
+      BACKEND_PORT: "${BACKEND_PORT}"
+    container_name: ${BACKEND_CONTAINER_NAME}
+    build:
+      context: /
+      args:
+        DOCKERHUB_LOGIN: ${DOCKERHUB_LOGIN}
+    ports:
+      - "${BACKEND_PORT}:${BACKEND_PORT}"
+    networks:
+      - network
+networks:
+  network:
